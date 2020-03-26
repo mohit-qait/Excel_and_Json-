@@ -4,9 +4,7 @@ import java.io.IOException;
 import org.json.simple.JSONObject;
 public class CreatingJSONDocument {
    public static void main(String args[]) {
-      //Creating a JSONObject object
       JSONObject jsonObject = new JSONObject();
-      //Inserting key-value pairs into the json object
       jsonObject.put("ID", "1");
       jsonObject.put("First_Name", "Shikhar");
       jsonObject.put("Last_Name", "Dhawan");
@@ -18,7 +16,6 @@ public class CreatingJSONDocument {
          file.write(jsonObject.toJSONString());
          file.close();
       } catch (IOException e) {
-         // TODO Auto-generated catch block
          e.printStackTrace();
       }
       System.out.println("JSON file created: "+jsonObject);
